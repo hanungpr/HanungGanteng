@@ -13,7 +13,7 @@ function hpr($reff){
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, 'https://app.viral-loops.com/api/v2/events');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, '{"publicToken":"RlnFOgDUuNs_mkW38dAZJLG3_Fc","params":{"event":"registration","user":{"firstname":"didi'.rand(1000000000,9999999999).'","email":"didi'.rand(1000000000,9999999999).'@gmail.com"},"referrer":{"referralCode":"'.$reff.'"},"refSource":"copy"}}');\
+    curl_setopt($ch, CURLOPT_POSTFIELDS, '{"publicToken":"RlnFOgDUuNs_mkW38dAZJLG3_Fc","params":{"event":"registration","user":{"firstname":"didi'.rand(1000000000,9999999999).'","email":"didi'.rand(1000000000,9999999999).'@gmail.com"},"referrer":{"referralCode":"'.$reff.'"},"refSource":"copy"}}');
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_ENCODING, 'gzip, deflate');
     
